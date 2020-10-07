@@ -1,9 +1,39 @@
 .memory-game-container{
     width: 400px;
     margin: 0 auto;
-    height:500px;
     background-color:rgb(235, 217, 168);
     border-radius: 5px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    padding-bottom:20px;
+}
 
+.game-controls{
+    padding:20px;
+    padding-bottom:50px;
+    height:50px;
+}
+
+.game-controls-button{
+    height:40px;
+    float:left;
+    border:none;
+    border-radius: 5px;
+    width:150px;
+    cursor: pointer;
+    font-size:20px
+}
+.game-controls-button:hover{
+    background-color:rgb(233, 233, 233);
+}
+
+.score-counter{
+    width:40px;
+    height:40px;
+    background-color:rgb(34, 34, 34);
+    border-radius: 5px;
+    float:right;
+    color:white;
+    font-size:20px;
+    line-height:40px;
+    margin-left:20px;
 }

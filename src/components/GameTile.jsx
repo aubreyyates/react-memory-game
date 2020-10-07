@@ -6,14 +6,21 @@ class GameTile extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            value: null
+            value: this.props.value
         };
     }
 
     render() {
+        let classForButton = "game-tile " + this.props.value;
+        let text = '';
+        if (this.props.value == 'highlight-button') {
+            text = this.props.numberToShow;
+        }
         return (
-            <button className="game-tile" onClick={() => this.setState({ value: "X" })} >
-
+            <button className={classForButton}>
+                <div>
+                    <p>{text}</p>
+                </div>
             </button>
         );
     }
