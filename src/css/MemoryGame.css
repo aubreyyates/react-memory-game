@@ -1,0 +1,9 @@
+.memory-game-container{
+    width: 400px;
+    margin: 0 auto;
+    height:500px;
+    background-color:rgb(235, 217, 168);
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+}
