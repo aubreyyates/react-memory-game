@@ -9,9 +9,9 @@ Have fun!
 
 Game development completion tasks [2/5]
 
-Game board [x]
-Game button light up sequence [x]
-Game click sequence being compared to light up sequence functionality []
-Game increasing light up sequence length functionality []
-Game score functionality []
+Game board [x]<br />
+Game button light up sequence [x]<br />
+Game click sequence being compared to light up sequence functionality []<br />
+Game increasing light up sequence length functionality []<br />
+Game score functionality []<br />
 
