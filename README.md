@@ -7,11 +7,12 @@ Follow these steps to run this application:
 
 Have fun!
 
-Game development completion tasks [2/5]
+Game development completion tasks [5/6]
 
 Game board [x]<br />
 Game button light up sequence [x]<br />
-Game click sequence being compared to light up sequence functionality []<br />
-Game increasing light up sequence length functionality []<br />
-Game score functionality []<br />
+Game click sequence being compared to light up sequence functionality [x]<br />
+Game increasing light up sequence length functionality [x]<br />
+Game score functionality [x]<br />
+Styling []<br />
 
