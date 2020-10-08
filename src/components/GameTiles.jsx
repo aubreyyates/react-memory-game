@@ -12,6 +12,7 @@ class GameTiles extends React.Component {
             sqaureToLightUp: this.props.sqaureToLightUp,
             numberToShow: this.props.numberToShow
         }
+
     }
 
     render() {
@@ -52,7 +53,7 @@ class GameTiles extends React.Component {
             classToAdd = "highlight-button";
         }
 
-        return <GameTile value={classToAdd} numberToShow={this.props.numberToShow} />;
+        return <GameTile value={classToAdd} id={i} gameTileButtonPress={this.props.gameTileButtonPress} numberToShow={this.props.numberToShow} />;
     }
 
 

@@ -6,8 +6,10 @@ class GameTile extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            value: this.props.value
+            value: this.props.value,
+            id: this.props.id
         };
+        this.onButtonClick = this.onButtonClick.bind(this);
     }
 
     render() {
@@ -17,12 +19,17 @@ class GameTile extends React.Component {
             text = this.props.numberToShow;
         }
         return (
-            <button className={classForButton}>
+            <button onClick={this.onButtonClick}
+                className={classForButton}>
                 <div>
                     <p>{text}</p>
                 </div>
             </button>
         );
+    }
+
+    onButtonClick() {
+        this.props.gameTileButtonPress(this.state.id);
     }
 }
 

@@ -20,7 +20,10 @@
 .game-tile:hover{
     background-color:rgb(199, 189, 150);
 }
+.game-tile:active{
+    background-color:rgb(51, 192, 58);
+}
 
 .highlight-button{
-    background-color:rgb(231, 78, 67);
+    background-color:rgb(51, 192, 58);
 }
