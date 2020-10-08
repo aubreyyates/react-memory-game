@@ -78,7 +78,8 @@ class MemoryGame extends React.Component {
         this.state.storedSequence.push(randomSquareNumber);
         this.setState({
             sqaureToLightUp: randomSquareNumber,
-            numberToShow: numberToShow
+            numberToShow: numberToShow,
+            listening: false
         });
     }
 
