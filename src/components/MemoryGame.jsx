@@ -21,6 +21,7 @@ class MemoryGame extends React.Component {
         };
         this.startButtonPress = this.startButtonPress.bind(this);
         this.gameTileButtonPress = this.gameTileButtonPress.bind(this);
+
     }
 
     render() {
@@ -31,7 +32,7 @@ class MemoryGame extends React.Component {
                     <button onClick={this.startButtonPress} id='start-button' className='game-controls-button'>{this.state.button}</button>
                 </div>
                 <div className='game-message-container'><p id='game-message'></p></div>
-                <GameTiles gameTileButtonPress={this.gameTileButtonPress} sqaureToLightUp={this.state.sqaureToLightUp} numberToShow={this.state.numberToShow}></GameTiles>
+                <GameTiles listening={this.state.listening} gameTileButtonPress={this.gameTileButtonPress} sqaureToLightUp={this.state.sqaureToLightUp} numberToShow={this.state.numberToShow}></GameTiles>
             </div>
         );
     }
@@ -54,6 +55,9 @@ class MemoryGame extends React.Component {
     startGame() {
         let squaresLeftToLightUp = this.state.score + 1;
         this.lightUpRandomSqaureSequence(squaresLeftToLightUp);
+        let gameMessage = document.getElementById("game-message");
+        gameMessage.textContent = "Wait";
+        gameMessage.style.display = "block";
     }
 
     lightUpRandomSqaureSequence(squaresLeftToLightUp) {
@@ -68,6 +72,10 @@ class MemoryGame extends React.Component {
                 sqaureToLightUp: -1,
                 listening: true
             });
+            let gameMessage = document.getElementById("game-message");
+            gameMessage.style.color = "#1ce63c"
+            gameMessage.textContent = "Go";
+            gameMessage.style.display = "block";
         }
 
     }
@@ -96,6 +104,9 @@ class MemoryGame extends React.Component {
                     this.state.storedSequence = [];
                     let squaresLeftToLightUp = this.state.score + 1;
                     this.lightUpRandomSqaureSequence(squaresLeftToLightUp);
+                    let gameMessage = document.getElementById("game-message");
+                    gameMessage.style.color = "#ca1313"
+                    gameMessage.textContent = "Wait";
                 } else {
                     this.state.clickNumber += 1;
                 }
@@ -109,7 +120,8 @@ class MemoryGame extends React.Component {
     gameOver() {
         let memoryGameContainer = document.getElementById("memory-game-container");
         let gameMessage = document.getElementById("game-message");
-        memoryGameContainer.style.border = "3px solid red";
+        gameMessage.style.color = "#ca1313"
+        memoryGameContainer.style.border = "3px solid rgb(202, 19, 19)";
         if (this.state.score < 2) {
             gameMessage.textContent = "Game Over! Score: " + this.state.score + ". Your memory is not the best.";
         } else if (this.state.score >= 2 && this.state.score < 5) {

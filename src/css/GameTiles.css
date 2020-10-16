@@ -1,5 +1,14 @@
+.board-row-top{
+    border-radius: 5px 5px 0px 0px;
+}
+.board-row-bottom{
+    border-radius: 0px 0px 5px 5px;
+}
 .board-row{
     height:80px;
     width:304px;
     margin: 0 auto;
+    background-color:rgb(133, 150, 252);
 }
+
+

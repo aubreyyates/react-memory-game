@@ -1,15 +1,19 @@
 .memory-game-container{
-    width: 400px;
+    width: 348px;
     margin: 0 auto;
-    background-color:rgb(235, 217, 168);
-    border-radius: 5px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    /* background-color:#6055ff; */
+    background-color:#283B6A;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+    padding-left:20px;
+    padding-right:20px;
     padding-bottom:20px;
     box-sizing: border-box;
+
 }
 
 .game-controls{
-    padding:20px;
+    padding-top:20px;
     padding-bottom:10px;
     height:50px;
 }
@@ -17,10 +21,12 @@
     height:100px;
 }
 #game-message {
-    color:red;
+    color:rgb(202, 19, 19);
     font-size:20px;
     padding:10px;
     display:none;
+    font-family: quicksand;
+    border-radius:5px;
     background-color: black;
     margin:0px;
 }
@@ -32,7 +38,8 @@
     border-radius: 5px;
     width:150px;
     cursor: pointer;
-    font-size:20px
+    font-size:20px;
+    font-family: quicksand;
 }
 .game-controls-button:hover{
     background-color:rgb(233, 233, 233);

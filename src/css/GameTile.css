@@ -4,26 +4,28 @@
     padding:0px;
     border:none;
     margin: 5px;
-    background-color:rgb(235, 227, 195);
+    /* background-color:rgb(57, 59, 83); */
+    background-color:rgb(252, 252, 252);
     border-radius:5px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    cursor:pointer;
     text-align: center;
     float:left;
     line-height: 1;
+    font-family: quicksand;
 }
 .game-tile p {
     font-size:20px;
     /* position:absolute; */
     /* left:5px; */
 }
-.game-tile:hover{
-    background-color:rgb(199, 189, 150);
+.game-tile-listening:hover{
+    background-color:rgb(224, 226, 230);
+    cursor:pointer;
 }
 .game-tile:active{
-    background-color:rgb(51, 192, 58);
+    background-color:rgb(168, 180, 218);
 }
 
 .highlight-button{
-    background-color:rgb(51, 192, 58);
+    background-color:rgb(213, 218, 231);
 }

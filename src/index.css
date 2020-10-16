@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
+button:focus {outline:0;}

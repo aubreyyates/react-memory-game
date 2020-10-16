@@ -17,26 +17,26 @@ class GameTiles extends React.Component {
 
     render() {
         return (
-            <div>
-                <div className="board-row">
+            <div className="game-tiles-container" >
+                <div className="board-row-top board-row">
                     {this.RenderGameTile(0)}
                     {this.RenderGameTile(1)}
                     {this.RenderGameTile(2)}
                     {this.RenderGameTile(3)}
                 </div>
-                <div className="board-row">
+                <div className="board-row-middle board-row">
                     {this.RenderGameTile(4)}
                     {this.RenderGameTile(5)}
                     {this.RenderGameTile(6)}
                     {this.RenderGameTile(7)}
                 </div>
-                <div className="board-row">
+                <div className="board-row-middle board-row">
                     {this.RenderGameTile(8)}
                     {this.RenderGameTile(9)}
                     {this.RenderGameTile(10)}
                     {this.RenderGameTile(11)}
                 </div>
-                <div className="board-row">
+                <div className="board-row-bottom board-row">
                     {this.RenderGameTile(12)}
                     {this.RenderGameTile(13)}
                     {this.RenderGameTile(14)}
@@ -51,6 +51,10 @@ class GameTiles extends React.Component {
 
         if (i == this.props.sqaureToLightUp) {
             classToAdd = "highlight-button";
+        }
+
+        if (this.props.listening == true) {
+            classToAdd += " game-tile-listening"
         }
 
         return <GameTile value={classToAdd} id={i} gameTileButtonPress={this.props.gameTileButtonPress} numberToShow={this.props.numberToShow} />;
