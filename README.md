@@ -14,5 +14,5 @@ Game button light up sequence [x]<br />
 Game click sequence being compared to light up sequence functionality [x]<br />
 Game increasing light up sequence length functionality [x]<br />
 Game score functionality [x]<br />
-Styling [6]<br />
+Styling [x]<br />
 
