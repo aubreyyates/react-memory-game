@@ -1,6 +1,6 @@
 Follow these steps to run this application:
 
-1. clone git repositor
+1. clone git repository
 2. cd react-memory-game
 3. npm install
 4. npm start
