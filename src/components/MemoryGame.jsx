@@ -143,6 +143,7 @@ class MemoryGame extends React.Component {
         let memoryGameContainer = document.getElementById("memory-game-container");
         let gameMessage = document.getElementById("game-message");
         memoryGameContainer.style.border = "none";
+        gameMessage.style.color = "#ca1313"
         gameMessage.style.display = "none";
     }
 
